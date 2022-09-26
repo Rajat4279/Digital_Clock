@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #18181b;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex: 1;
+  /* These 3 lines converted my text into gradient form */
+  background-image: linear-gradient(180deg, rgb(0, 242, 255), rgb(0, 36, 33));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Till here  */
+}
+
+.top {
+  width: 40%;
+  margin: auto;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.bottom {
+  font-size: 10rem;
+  margin: auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.clock {
+  display: flex;
+}
