@@ -10,17 +10,18 @@ body {
 
 .container {
   display: flex;
+  width: 100%;
   height: 100vh;
   flex: 1;
+}
+
+.top {
   /* These 3 lines converted my text into gradient form */
   background-image: linear-gradient(180deg, rgb(0, 242, 255), rgb(0, 36, 33));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   /* Till here  */
-}
-
-.top {
   width: 20%;
   margin: auto;
   font-size: 2rem;
@@ -28,6 +29,12 @@ body {
 }
 
 .bottom {
+  /* These 3 lines converted my text into gradient form */
+  background-image: linear-gradient(180deg, rgb(0, 242, 255), rgb(0, 36, 33));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Till here  */
   font-size: 10rem;
   margin: auto;
   width: 80%;
@@ -43,4 +50,60 @@ body {
 
 .clock {
   display: flex;
+}
+
+@media only screen and (max-width: 540px) {
+  .container {
+    flex-direction: column;
+  }
+  .top {
+    display: flex;
+    width: 100%;
+    font-size: 30px;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom {
+    width: 100%;
+    font-size: 5rem;
+    height: 75vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .top {
+    display: flex;
+    width: 100%;
+    font-size: 3rem;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom {
+    width: 100%;
+    font-size: 7rem;
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .container {
+    flex-direction: column;
+  }
+  .top {
+    display: flex;
+    width: 100%;
+    font-size: 2rem;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom {
+    align-items: center;
+    width: 100%;
+    font-size: 3rem;
+    height: 60vh;
+  }
 }
